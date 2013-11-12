@@ -42,13 +42,13 @@ options {
 };
 
 logging {
-  channel default_log {
-    file "<%= node[:bind9][:log_file] %>" versions 5 size 128M;
-    print-time yes;
-    print-severity yes;
-    print-category yes;
-  };
+//  channel default_log {
+//    file "<%= node[:bind9][:log_file] %>" versions 5 size 128M;
+//    print-time yes;
+//    print-severity yes;
+//    print-category yes;
+//  };
       
-  category default { default_log; };
-  category general { default_log; };
+//  category default { default_log; };
+//  category general { default_log; };
 };
