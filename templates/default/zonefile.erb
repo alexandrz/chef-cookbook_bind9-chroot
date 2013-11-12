@@ -1,10 +1,10 @@
 $TTL <%= @global_ttl %>
 @ IN SOA <%= @soa %> <%= @contact %> (
                 <%%= @serial %> ; serial [yyyyMMddNN]
-                4H      ; refresh
-                30M     ; retry
-                1W      ; expiry
-                1D      ; minimum
+                5m      ; refresh
+                1m      ; retry
+                1w      ; expiry
+                5m      ; minimum
 )
 
                            IN    NS <%= @soa %>
